@@ -37,8 +37,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile "junit:junit:$rootProject.ext.jUnitVersion"
-    compile "com.android.support:appcompat-v7:$rootProject.ext.supportAppCompatVersion"
-    compile project(':rx-android-networking')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$rootProject.ext.jUnitVersion"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation project(':rx-android-networking')
+    implementation project(':android-networking')
+    implementation "io.reactivex:rxandroid:$rootProject.ext.rxJavaAndroidVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttp3Version"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation "io.reactivex:rxjava:$rootProject.ext.rxJavaVersion"
 }

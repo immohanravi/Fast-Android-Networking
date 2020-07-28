@@ -30,7 +30,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
     buildTypes {
@@ -42,11 +42,16 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile "com.android.support:appcompat-v7:$rootProject.ext.supportAppCompatVersion"
-    testCompile "junit:junit:$rootProject.ext.jUnitVersion"
-    compile project(':rx2-android-networking')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation "junit:junit:$rootProject.ext.jUnitVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxJava2AndroidVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxJava2Version"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttp3Version"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation project(':rx2-android-networking')
+    implementation project(':android-networking')
 }
