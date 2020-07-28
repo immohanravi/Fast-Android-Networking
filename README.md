@@ -1,5 +1,9 @@
 <img src=https://raw.githubusercontent.com/amitshekhariitbhu/Fast-Android-Networking/master/assets/androidnetworking.png >
 
+
+# Fork of [https://github.com/amitshekhariitbhu/Fast-Android-Networking](https://github.com/amitshekhariitbhu/Fast-Android-Networking)
+
+
 # Fast Android Networking Library
 
 [![Build Status](https://travis-ci.org/amitshekhariitbhu/Fast-Android-Networking.svg?branch=master)](https://travis-ci.org/amitshekhariitbhu/Fast-Android-Networking)
@@ -629,10 +633,6 @@ As it uses [OkHttp](http://square.github.io/okhttp/) as a networking layer, it s
 
 ### [Check out Mindorks awesome open source projects here](https://mindorks.com/open-source-projects)
 
-### Contact - Let's become friend
-- [Twitter](https://twitter.com/amitiitbhu)
-- [Github](https://github.com/amitshekhariitbhu)
-- [Medium](https://medium.com/@amitshekhar)
 - [Facebook](https://www.facebook.com/amit.shekhar.iitbhu)
 
 ### License
